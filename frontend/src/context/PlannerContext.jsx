@@ -8,7 +8,7 @@ const PLACES_STORAGE_KEY = 'dayspire_places_v33_proposal_verified';
 const PLAN_STORAGE_KEY = 'dayspire_plan_ids_v1';
 const ADMIN_AUTH_KEY = 'dayspire_admin_auth_v1';
 const API_BASE_URL = typeof window !== 'undefined' && window.location.port === '5173'
-  ? 'http://localhost:5000/api'
+  ? 'https://day-spire-backend.vercel.app/api
   : '/api';
 
 export const PlannerProvider = ({ children }) => {
