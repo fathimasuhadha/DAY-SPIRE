@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-serif: 'Lora', 'Georgia', 'Playfair Display', serif;
+  --font-heading: 'Lora', 'Georgia', serif;
+  
+  --color-cultural-teal: #084C61;
+  --color-terracotta: #E27D60;
+  --color-terracotta-hover: #C95F43;
+  
+  --color-canvas: #FDFBF7;
+  --color-surface: #F2EDE4;
+  --color-border-warm: #E8E2D9;
+  
+  --color-text-main: #4A4A4A;
+  --color-text-muted: #7D7D7D;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    background-color: #FDFBF7;
+    color: #4A4A4A;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    color: #084C61;
+  }
+}
+
+/* Custom scrollbar for horizontal place lists */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+
